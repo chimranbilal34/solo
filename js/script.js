@@ -1,7 +1,8 @@
 /*eslint-env browser*/
   /*eslint-env jquery*/
-jQuery(window).on('load', function () {
-    jQuery('#status').fadeOut(3000);
+$(window).on('load', function () {
+    $('#status').fadeOut(500);
+    $('#preloader').delay(350).fadeOut();
 });
 
 

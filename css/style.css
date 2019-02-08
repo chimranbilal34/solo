@@ -1,22 +1,174 @@
-#preloader{
+
+body {
+    color: gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: darkseagreen;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+}
+
+#preloader {
     background-color: white;
     position: fixed;
     left: 0;
     right: 0;
-    top:0;
+    top: 0;
     bottom: 0;
     z-index: 99999;
 }
 
 
-#status{
+#status {
     background-image: url('../img/preloader/preloader.gif');
     background-repeat: no-repeat;
     width: 70px;
     height: 70px;
     position: absolute;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     margin-left: -35px;
     margin-top: -35px;
+}
+
+#home {
+    background: none;
+}
+
+#home-bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url(../video/solo.jpg) no-repeat;
+    background-size: cover;
+
+
+}
+
+
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner {
+
+    position: absolute;
+    left: 15%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+#home-heading h1 span {
+    color: coral;
+    font-weight: 500;
+}
+
+#home-text p {
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 17px;
+    margin: 8px 0 30px 0;
+}
+
+.btn-home {
+    border-radius: 28px;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: yellow;
+    border: 1px solid yellow;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: #2e6da4;
+    border: 2px solid;
+    text-transform: uppercase;
+    margin: 0 6px;
+    -webkit-transition: all 5s;
+    -webkit-transition: all 2s;
+    transition: all 5s;
+}
+
+
+
+#arrow-down {
+    position: absolute;
+    left: 51%;
+    bottom: 20px;
+    color: #710d0d;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+    background: yellow;
+    bottom: 0px;
+    top: 90%;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: yellow;
+
+}
+
+#about{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+}
+
+#about-left,#about-right{
+    margin-top: 20%;
 }
